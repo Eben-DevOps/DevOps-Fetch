@@ -3,7 +3,7 @@ Description=DevOpsFetch Service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /path/to/devopsfetch.py -l
+ExecStart=/path/to/devopsfetch.sh
 Restart=always
 
 [Install]

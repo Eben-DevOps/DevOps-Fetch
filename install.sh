@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Install dependencies
-pip3 install -r requirements.txt
+apt-get update
+apt-get install -y docker.io nginx
 
 # Copy the systemd service file to the appropriate location
 cp devopsfetch.service /etc/systemd/system/
